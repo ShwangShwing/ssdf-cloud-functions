@@ -12,7 +12,7 @@ exports.sendNewsNotification =
 
     const getNodePath = (snapshot: any): string => {
         const rootUrlLength = snapshot.ref.root.toString().length;
-        const nodePath = snapshot.ref.toString().substring(rootUrlLength + 1);
+        const nodePath = snapshot.ref.toString().substring(rootUrlLength);
         return nodePath;
     }
 
